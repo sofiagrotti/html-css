@@ -1,3 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+:root {
+    --fonte01: "MonteCarlo", cursive;
+    --fonte02: "Gelasio", serif;
+    --fonte03: Tahoma, Geneva, Verdana, sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -6,6 +17,13 @@
 html,body {
     min-height: 100vh;
     background-color: #F2CDC4;
+    
+}
+
+h1 , h2 {
+    font-family: var(--fonte01);
+    padding-bottom: 50px;
+    font-size: 3em;
 }
 
 header {
@@ -15,7 +33,10 @@ header {
 }
 
 header > h1 {
+    font-size: 3.5em;
+    font-family: var(--fonte02);
     padding-top: 50px;
+    padding-bottom: 10px;
     font-variant: small-caps;
 }
 
@@ -35,6 +56,8 @@ a:hover {
 }
 
 section {
+    font-family: var(--fonte02);
+    font-size: 1em;
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
@@ -49,13 +72,24 @@ section.normal {
 }
 
 section.imagem {
+    
     background-color: cadetblue;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 7px;
     width: 400px;
     background-color:  rgba(0, 0, 0, 0.306);
     color: aliceblue;
+}
+
+.sub {
+    font-size: 2em;
+
 }
 
 
