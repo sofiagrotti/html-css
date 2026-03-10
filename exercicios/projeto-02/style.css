@@ -22,7 +22,7 @@ html,body {
 
 h1 , h2 {
     font-family: var(--fonte01);
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-size: 3em;
 }
 
@@ -48,11 +48,20 @@ a {
     color: aliceblue;
     text-decoration: none;
     font-weight: bolder;
+    transition-duration: 0.7s;
 }
 
 a:hover {
     text-decoration: underline;
     color: #D99C9C;
+}
+
+.botao1 {
+    background-color: #591e19da;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 1px 2px 17px 0px black;
+    border-radius: 5px;
+    
 }
 
 section {
@@ -65,32 +74,67 @@ section {
 }
 
 
+section > p {
+    padding-bottom: 1em;
+}
+
 section.normal { 
     background-color: aliceblue;
     color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
 section.imagem {
-    
+    padding-bottom: 20px;
+    padding-top: 20px;       
     background-color: cadetblue;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
-
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    display: inline-block;
-    padding: 7px;
-    width: 400px;
-    background-color:  rgba(0, 0, 0, 0.306);
-    color: aliceblue;
+    margin-right: 30em;
+
+    text-align: justify;
+    color: black;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+section#img01 {
+    background-image: url(imagens/teste01.jpg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+section#img02 {
+    background-image: url(imagens/teste02.jpg);
+    background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+}
+
+section#img03 {
+    background-image: url(imagens/teste03.jpg);
+    background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+}
+
+.principal {
+    color: #591E19;
 }
 
 .sub {
     font-size: 2em;
 
 }
+
 
 
 
