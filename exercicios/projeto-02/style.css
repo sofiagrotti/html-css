@@ -91,6 +91,7 @@ section.imagem {
     padding-bottom: 40px;
     background-color: cadetblue;
     background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
