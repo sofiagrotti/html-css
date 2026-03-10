@@ -10,17 +10,18 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html,body {
+html, body {
     min-height: 100vh;
     background-color: #F2CDC4;
-    
+    overflow-x: hidden;
 }
 
-h1 , h2 {
+h1, h2 {
     font-family: var(--fonte01);
     padding-bottom: 30px;
     font-size: 3em;
@@ -30,18 +31,20 @@ header {
     background-color: #591E19;
     color: aliceblue;
     text-align: center;
+    min-height: 150px;
+    padding: 30px 20px;
 }
 
 header > h1 {
     font-size: 3.5em;
     font-family: var(--fonte02);
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-variant: small-caps;
 }
 
 header > p {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 a {
@@ -58,24 +61,22 @@ a:hover {
 
 .botao1 {
     background-color: #591e19da;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     box-shadow: 1px 2px 17px 0px black;
     border-radius: 5px;
-    
+    display: inline-block;
 }
 
 section {
     font-family: var(--fonte02);
     font-size: 1em;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
+    padding: 60px 30px;
 }
-
 
 section > p {
     padding-bottom: 1em;
+    max-width: 700px;
 }
 
 section.normal { 
@@ -83,47 +84,45 @@ section.normal {
     color: black;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 section.imagem {
-    padding-bottom: 20px;
-    padding-top: 20px;       
+    padding-top: 40px;
+    padding-bottom: 40px;
     background-color: cadetblue;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    background-attachment: fixed;
+    background-attachment: scroll;
 }
 
 section.imagem > p {
-    margin-right: 30em;
-
+    max-width: 600px;
+    width: 100%;
     text-align: justify;
     color: black;
     text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+    background-color: rgba(255, 255, 255, 0.65);
+    padding: 15px;
+    border-radius: 10px;
 }
 
 section#img01 {
     background-image: url(imagens/teste01.jpg);
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section#img02 {
     background-image: url(imagens/teste02.jpg);
-    background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section#img03 {
     background-image: url(imagens/teste03.jpg);
-    background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .principal {
@@ -132,16 +131,86 @@ section#img03 {
 
 .sub {
     font-size: 2em;
-
 }
 
-
-
-
 footer {
-    padding: 3px;
+    padding: 10px;
     text-align: center;
     background-color: #591E19;
     color: aliceblue;
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 2.2em;
+    }
+
+    header > h1 {
+        font-size: 2.4em;
+    }
+
+    section {
+        padding: 40px 20px;
+        font-size: 0.95em;
+        line-height: 1.8em;
+    }
+
+    section.imagem > p {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .sub {
+        font-size: 1.5em;
+    }
+}
+
+/* CELULAR */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.8em;
+        padding-bottom: 20px;
+    }
+
+    header {
+        min-height: auto;
+        padding: 25px 15px;
+    }
+
+    header > h1 {
+        font-size: 2em;
+        padding-top: 10px;
+    }
+
+    header > p {
+        font-size: 0.95em;
+        padding-bottom: 10px;
+    }
+
+    section {
+        padding: 30px 15px;
+        font-size: 0.9em;
+        line-height: 1.7em;
+    }
+
+    section.imagem {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    section.imagem > p {
+        padding: 12px;
+        font-size: 0.95em;
+    }
+
+    .sub {
+        font-size: 1.2em;
+    }
+
+    .botao1 {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
 }
 
